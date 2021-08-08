@@ -9,5 +9,5 @@ if test -f /root/.ip.txt; then
 else
 	ip address show dev enp2s0 > /root/.ip.txt;
 fi
-sshpass -p 'your_password_here' scp .ip.txt your_user_name@your_fixed_ip:/home/your_user_name/
+sshpass -p 'your_password_here' scp .ip.txt your_username@your_static_ip:/home/your_username/
 exit 0;
