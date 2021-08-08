@@ -1,7 +1,8 @@
 # systemd-sitm
 Systemd Service for informing some host the dhcp ip for ssh usage
 #### you can use it as:
-``sudo git clone this-repo (using sudo to escape from chown)
+```
+  sudo git clone this-repo (using sudo to escape from chown)
 
   sudo cd system-sitm
   
@@ -20,5 +21,5 @@ Systemd Service for informing some host the dhcp ip for ssh usage
   sudo systemctl start tellip
 
   \# now go for ssh.
-``
+```
 
