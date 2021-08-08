@@ -1,0 +1,12 @@
+[Unit]
+Description=Written by mmahdi98 under GNU Affero General Public LICENSE
+Description=Get the ip address for ssh on up time and ip change event.
+After=sshd.service
+
+[Service]
+Type=forking
+WorkingDirectory=/root
+ExecStart= /usr/bin/bash /root/.dummy.sh &
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
